@@ -1,0 +1,29 @@
+---
+import ProjectCard from "./ProjectCard.svelte";
+---
+
+<div class="flex flex-col justify-center content-center my-10">
+  <div class="text-center my-2">
+    <h2 class="font-bold text-3xl font-serif mb-2">
+      {"My Projects"}
+    </h2>
+    <p class="font-sans text-gray-500 font-medium text-sm">
+      {
+        "My make my way to work in a project is to reseach the facts try them out"
+      }
+    </p>
+  </div>
+  <div class="grid xs:grid-cols-1 lg:grid-cols-2 gap-5 grid-flow-row">
+    {
+      [1, 2, 3, 4].map((_) => (
+        <ProjectCard
+          title="Weather app"
+          desc={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum pariatur explicabo corrupti. Cumque incidunt at quidem sequi dignissimos tempora culpa, saepe, quisquam impedit molestiae officia, voluptatibus modi architecto obcaecati nesciunt!"
+          }
+          imageUrl={"/images/weather app.png"}
+        />
+      ))
+    }
+  </div>
+</div>
