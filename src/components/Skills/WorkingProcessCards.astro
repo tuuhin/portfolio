@@ -1,0 +1,23 @@
+---
+import { Colors, getColor } from "../../util/Colors";
+
+export interface Props {
+  title: string;
+  secondary: String;
+  bgColor: Colors;
+}
+const { title } = Astro.props;
+
+const { secondary } = Astro.props;
+
+const style = `p-5 border-2 border-black border-l-8 rounded-r-lg  ${getColor(
+  Astro.props.bgColor
+)}`;
+---
+
+<div class={style}>
+  <p class="font-bold text-xl pb-3">{title}</p>
+  <p class="text-sm tracking-wide font-semibold">
+    {secondary}
+  </p>
+</div>

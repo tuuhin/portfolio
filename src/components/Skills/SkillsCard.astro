@@ -1,0 +1,33 @@
+---
+import { Colors, getColor } from "../../util/Colors";
+
+export interface Props {
+  primary: string;
+  secondary?: string;
+  background?: Colors;
+  image: string;
+  tags: string[];
+}
+
+const { primary } = Astro.props;
+const { image } = Astro.props;
+const { secondary } = Astro.props;
+const { tags } = Astro.props;
+
+const background = getColor(Astro.props.background);
+
+const container = `${background} border-2 border-r-4 border-b-4 border-black rounded-md`;
+---
+
+<div class={container}>
+  <p class="px-2 py-2 font-bold border-b-2 border-black">{primary}</p>
+  <div class="flex justify-between p-4">
+    <div class="flex flex-col">
+      <p class="font-normal tracking-tighter leading-tight max-w-md">
+        {secondary}
+      </p>
+      {tags.map((e) => <p>{e}</p>)}
+    </div>
+    <img src={image} alt="Not found" class="h-32 aspect-square rounded-full" />
+  </div>
+</div>

@@ -1,0 +1,35 @@
+---
+import { Colors } from "../../util/Colors";
+import WorkingProcessCards from "./WorkingProcessCards.astro";
+---
+
+<div class="pt-10">
+  <div class="max-w-2xl">
+    <p class="text-4xl font-bold tracking-tight font-merriweather">
+      Lets look at my working style
+    </p>
+    <p class="pt-5 font-medium">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quos
+      laborum molestias aut, ea hic adipisci ad natus odio consequatur dicta,
+      veritatis magnam esse laudantium vero ex sed unde impedit.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 pt-4">
+    <WorkingProcessCards
+      title="Discovery"
+      bgColor={Colors.yellow}
+      secondary={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid aliquam? Quibusdam dolore officiis consequatur? Officia odio laboriosam modi officiis quos ipsum iste vero exercitationem, excepturi suscipit necessitatibus culpa libero."}
+    />
+    <WorkingProcessCards
+      title="Strategy"
+      bgColor={Colors.green}
+      secondary={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid aliquam? Quibusdam dolore officiis consequatur? Officia odio laboriosam modi officiis quos ipsum iste vero exercitationem, excepturi suscipit necessitatibus culpa libero."}
+    />
+    <WorkingProcessCards
+      title="Work"
+      bgColor={Colors.violet}
+      secondary={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid aliquam? Quibusdam dolore officiis consequatur? Officia odio laboriosam modi officiis quos ipsum iste vero exercitationem, excepturi suscipit necessitatibus culpa libero."}
+    />
+  </div>
+</div>

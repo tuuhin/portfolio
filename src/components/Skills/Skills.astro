@@ -1,0 +1,48 @@
+---
+import { Colors } from "../../util/Colors";
+import SkillsCard from "./SkillsCard.astro";
+import WorkingProcess from "./WorkingProcess.astro";
+---
+
+<div
+  class="bg-violet-300 py-10 border-t-2 border-black scroll-smooth px-20"
+  id="skills"
+>
+  <div
+    class="flex space-x-5 md:space-x-5 flex-col content-center lg:flex-row lg:content-start"
+  >
+    <img
+      class="flex-none rounded-lg border-black border-4 border-b-8 border-r-8 lg:w-2/5 aspect-square"
+      src="/images/1162430_336.jpg"
+    />
+    <div class="lg:w-2/5 text-center lg:text-left flex flex-col grow max-w-2xl">
+      <div>
+        <p class="text-4xl font-bold tracking-wide font-playfair pb-5">
+          {"See what I can do for you easily"}
+        </p>
+        <p class="text-small">
+          {
+            " Lorem ipsum dolor sit amet, consectetur adipisicing elit. At magnamvoluptates iure commodi reprehenderit, adipisci culpa totam quas   deleniti ipsam consequatur voluptatem, provident rem eos dolore dolum  autem reiciendis praesentium."
+          }
+        </p>
+      </div>
+      <div class="flex space-y-3 flex-col py-5 grow">
+        <SkillsCard
+          primary="Mobile Develpoment"
+          secondary={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ab itaque ex minima accusantium deserunt temporibus, aspernatur dolores aliquam ducimus veniam, voluptatem explicabo quam id voluptate magnam velit ad. Quia."}
+          image="./images/10301602_4412951.jpg"
+          background={Colors.teal}
+          tags={["Flutter Development"]}
+        />
+        <SkillsCard
+          primary="Backend Development"
+          secondary={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ab itaque ex minima accusantium deserunt temporibus, aspernatur dolores aliquam ducimus veniam, voluptatem explicabo quam id voluptate magnam velit ad. Quia."}
+          image="./images/4103163_1032.jpg"
+          background={Colors.pink}
+          tags={["Django Develpoment"]}
+        />
+      </div>
+    </div>
+  </div>
+  <WorkingProcess />
+</div>
