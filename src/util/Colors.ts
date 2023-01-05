@@ -8,13 +8,15 @@ export enum Colors {
   transparent,
 }
 
- const  colorMap = new Map<Colors, string>([
+const colorMap = new Map<Colors, string>([
   [Colors.yellow, "bg-orange-300"],
   [Colors.green, "bg-green-400"],
   [Colors.violet, "bg-blue-300"],
-  [Colors.red,"bg-red-400"],
-  [Colors.pink,"bg-pink-300"],
-  [Colors.teal,"bg-teal-300"]
+  [Colors.red, "bg-red-400"],
+  [Colors.pink, "bg-pink-300"],
+  [Colors.teal, "bg-teal-300"],
+  [Colors.transparent, "bg-transparent"],
 ]);
 
-export const getColor =(color?:Colors)=> colorMap.get(color??Colors.transparent);
+export const getColor = (color?: Colors): string =>
+  colorMap.get(color ?? Colors.transparent) ?? "bg-transparent";

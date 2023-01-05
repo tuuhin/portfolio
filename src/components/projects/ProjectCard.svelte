@@ -1,16 +1,48 @@
 <script lang="ts">
+  import type { KnownLanguage } from "../../data/languages";
+  import { getLangColor } from "../../util/LanguageColors";
+
   export let title: string;
-  export let desc: string;
-  export let imageUrl: string | undefined = undefined;
+  export let description: string;
+  export let tags: string[];
+  export let languages: readonly KnownLanguage[];
+  export let image: string | undefined = undefined;
+  export let projectURL: string;
+
+  let langColor = languages.map((e) => getLangColor(e));
+
+  let background = `${langColor[0]}`;
+
+  let colSpan = languages.length < 2 ? "col-span-1" : "col-span-2";
 </script>
 
-<div class="w-50 rounded-lg p-5 border-solid border-2 m-1 bg-green-300 ">
-  {#if typeof imageUrl == "string"}
-    <img class="clipper rounded-2xl" src={imageUrl} alt="Not found" />
+<div
+  class={`rounded-lg p-5 m-1 ${background} border-2 border-r-4 border-b-4 border-black ${colSpan}`}
+>
+  {#if typeof image == "string"}
+    <img class="clipper rounded-2xl" src={image} alt="Not found" />
   {/if}
-  <h2 class="font-bold text-2xl font-mono capitalize">{title}</h2>
-  <p class="font-light text-ellipsis overflow-hidden text-green-800 font-sans">
-    {desc}
+  <h2 class="font-bold text-xl font-playfair">
+    {title}
+  </h2>
+
+  <p class="text-base text-ellipsis overflow-hidden font-medium font-sans">
+    {description}
+  </p>
+
+  <div class="pt-2 flex flex-wrap">
+    {#each tags as tag}
+      <li
+        class="list-none bg-slate-800 px-4 py-1 m-1 text-white font-poppins font-semibold rounded-xl"
+      >
+        {tag}
+      </li>
+    {/each}
+  </div>
+  <p class="text-white">
+    Project url: <span class="font-bold hover:underline"
+      ><a href={projectURL}>{projectURL}</a></span
+    >
   </p>
 </div>
 

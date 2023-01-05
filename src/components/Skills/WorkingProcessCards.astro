@@ -10,14 +10,12 @@ const { title } = Astro.props;
 
 const { secondary } = Astro.props;
 
-const style = `p-5 border-2 border-black border-l-8 rounded-r-lg  ${getColor(
-  Astro.props.bgColor
-)}`;
+const color = getColor(Astro.props.bgColor);
 ---
 
-<div class={style}>
-  <p class="font-bold text-xl pb-3">{title}</p>
-  <p class="text-sm tracking-wide font-semibold">
+<div class={`p-3 border-2 border-black border-l-8 rounded-r-lg  ${color}`}>
+  <p class="font-bold text-xl pb-1 font-playfair tracking-wide">{title}</p>
+  <p class="text-sm md:tracking-wide">
     {secondary}
   </p>
 </div>

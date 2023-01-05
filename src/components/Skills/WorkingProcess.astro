@@ -5,17 +5,19 @@ import WorkingProcessCards from "./WorkingProcessCards.astro";
 
 <div class="pt-10">
   <div class="max-w-2xl">
-    <p class="text-4xl font-bold tracking-tight font-merriweather">
-      Lets look at my working style
+    <p class="text-4xl font-bold tracking-tight font-playfair">
+      {"Lets look at my working style"}
     </p>
-    <p class="pt-5 font-medium">
+    <p class="pt-5 font-poppins">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quos
       laborum molestias aut, ea hic adipisci ad natus odio consequatur dicta,
       veritatis magnam esse laudantium vero ex sed unde impedit.
     </p>
   </div>
 
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 pt-4">
+  <div
+    class="pt-4 flex flex-col space-y-5 space-x-0 lg:space-y-0 lg:space-x-5 lg:flex-row"
+  >
     <WorkingProcessCards
       title="Discovery"
       bgColor={Colors.yellow}
