@@ -1,10 +1,10 @@
 <script lang="ts">
-  export let onClick: () => boolean;
+  export let onClick: () => void;
 </script>
 
 <button
   type="button"
-  class="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+  class="inline-flex items-center justify-center rounded-md bg-fuchsia-700 p-2 border-2 border-black text-black focus:ring-offset-2 focus:ring-offset-gray-800"
   aria-controls="mobile-menu"
   aria-expanded="false"
   on:click={onClick}
