@@ -13,37 +13,48 @@
 
   let background = `${langColor[0]}`;
 
-  let colSpan = languages.length < 2 ? "col-span-1" : "col-span-2";
+  let colSpan = languages.length < 2 ? "md:col-span-1" : "md:col-span-2";
 </script>
 
 <div
-  class={`rounded-lg p-5 m-1 ${background} border-2 border-r-4 border-b-4 border-black ${colSpan}`}
+  class={`${background}  p-6  border-2 border-black rounded-lg shadow-md ${colSpan} flex flex-col`}
 >
   {#if typeof image == "string"}
     <img class="clipper rounded-2xl" src={image} alt="Not found" />
   {/if}
-  <h2 class="font-bold text-xl font-playfair">
+  <p class="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-playfair">
     {title}
-  </h2>
+  </p>
 
-  <p class="text-base text-ellipsis overflow-hidden font-medium font-sans">
+  <p class="font-medium text-slate-700">
     {description}
   </p>
 
-  <div class="pt-2 flex flex-wrap">
-    {#each tags as tag}
-      <li
-        class="list-none bg-slate-800 px-4 py-1 m-1 text-white font-poppins font-semibold rounded-xl"
-      >
-        {tag}
-      </li>
-    {/each}
+  <div class="grow">
+    <div class="pt-2 flex flex-wrap">
+      {#each tags as tag}
+        <li
+          class="list-none bg-slate-800 px-4 py-1 m-1 text-white font-poppins font-semibold rounded-lg text-sm"
+        >
+          {tag}
+        </li>
+      {/each}
+    </div>
   </div>
-  <p class="text-white">
-    Project url: <span class="font-bold hover:underline"
-      ><a href={projectURL}>{projectURL}</a></span
+  <div class="pt-3 items-center ">
+    <p
+      class="uppercase tracking-wide font-poppins font-bold text-white border-b-2 border-gray-200"
     >
-  </p>
+      {"Project url:"}
+    </p>
+    <a
+      href={projectURL}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-sm text-white font-poppins font-semibold hover:font-bold hover:italic flex-wrap"
+      >{projectURL}</a
+    >
+  </div>
 </div>
 
 <style>

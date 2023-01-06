@@ -3,14 +3,16 @@ import Contacts from "./Contacts.astro";
 ---
 
 <footer class="bg-yellow-200 text-center pt-10 pb-5 border-t-2 border-black">
-  <p class="text-4xl font-bold tracking-tight text-center font-merriweather">
+  <p class="text-4xl font-bold tracking-tight text-center font-playfair">
     {" Interested in my work"}
   </p>
-  <p class="font-semibold text-slate-800 pt-2 text-sm">
-    {" I will surely convert your ideas into wonderful apps"}
+  <p
+    class="font-semibold text-slate-800 pt-2 text-sm font-mono uppercase tracking-wide"
+  >
+    {" I like to convert ideas into reallity"}
   </p>
   <a
-    class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white my-5"
+    class="inline-flex justify-center text-md font-bold uppercase py-3 px-10 bg-slate-400 text-black my-5 border-2 border-b-4 border-r-4 border-black rounded shadow-lg tracking-wider"
     href="/#"
   >
     {"Contact me"}
@@ -18,5 +20,7 @@ import Contacts from "./Contacts.astro";
 
   <Contacts />
 
-  <p class="font-light font-mono">Copyright &copy; 2023 all rights reserved</p>
+  <p class="font-light font-mono">
+    Copyright &copy; {new Date().getFullYear()} all rights reserved
+  </p>
 </footer>

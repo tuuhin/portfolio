@@ -4,11 +4,12 @@
   import NavItems from "./NavItems.svelte";
   import NavButton from "./NavButton.svelte";
 
-  let isFocused = false;
+  let isFocused: boolean = false;
+
   const onClick = () => (isFocused = !isFocused);
 </script>
 
-<nav class="bg-slate-800">
+<nav class="border-b-2 border-black bg-sky-400">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <div class="-mr-2 flex md:hidden">
