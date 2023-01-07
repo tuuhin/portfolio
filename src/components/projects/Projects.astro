@@ -3,29 +3,22 @@ import { projectData } from "../../data/project_data";
 import ProjectCard from "./ProjectCard.svelte";
 ---
 
-<div class="bg-zinc-300 px-10 lg:px-28 py-20 border-t-2 border-black h-fit">
-  <p class="text-4xl font-black text-center font-playfair">
-    {"Projects"}
-  </p>
-  <div class="py-2 lg:text-center">
-    <p class="tracking-tight text-base font-poppins">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem,
-      repellendus enim, maiores labore aut sapiente porro delectus
-      exercitationem aspernatur inventore dolorem pariatur mollitia, ab
-      similique nesciunt consequatur voluptatum illum numquam!
+<div
+  class="bg-zinc-300 px-5 md:px-10 lg:px-28 py-10 border-t-2 border-black h-fit"
+  id="projects"
+>
+  <div class="flex flex-col justify-center items-center">
+    <p class="text-4xl font-black font-playfair">
+      {"Some things that I have built"}
+    </p>
+
+    <p class="tracking-tight text-base font-poppins py-2 max-w-xl text-center">
+      {
+        "In order to grow you should should practice your skills and there is nothing more practicing than challenging yourself to make projects"
+      }
     </p>
   </div>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
-    {
-      projectData.map((e) => (
-        <ProjectCard {...e} />
-        // <div class="bg-blue-300 p-3 rounded-lg border-2 border-b-4 border-r-4 border-black">
-        //   <p class="font-bold font-playfair text-lg pb-2 tracking-wide">
-        //     {e.title}
-        //   </p>
-        //   <p class="tracking-tight">{e.description}</p>
-        // </div>
-      ))
-    }
+    {projectData.map((e) => <ProjectCard {...e} />)}
   </div>
 </div>

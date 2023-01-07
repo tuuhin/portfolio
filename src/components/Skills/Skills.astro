@@ -4,7 +4,7 @@ import SkillsCard from "./SkillsCard.astro";
 ---
 
 <div
-  class="flex space-x-5 flex-col items-center justify-evenly md:flex-row lg:space-x-20"
+  class="flex flex-col justify-evenly items-center lg:flex-row lg:space-x-20"
 >
   <img
     class="rounded-lg border-black border-4 border-b-8 border-r-8 aspect-square md:h-96"
@@ -13,25 +13,26 @@ import SkillsCard from "./SkillsCard.astro";
   <div class="w-fit lg:w-2/5 flex flex-col grow md:max-w-xl">
     <div>
       <p class="text-4xl font-bold tracking-wide font-playfair pb-5">
-        {"See what I can do for you easily"}
+        {"What are my skills"}<span class="font-extrabold pl-2">?</span>
       </p>
-      <p class="text-base">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque odit nemo
-        at excepturi pariatur. Officiis, porro distinctio quibusdam natus cum
-        perspiciatis, sapiente architecto labore maiores adipisci error. Quidem,
-        possimus consequatur?
+      <p class="font-poppins text-base font-medium">
+        In these years of my <span
+          class="font-bold border-b-2 border-violet-500 text-violet-600 italic"
+          >programming</span
+        > journey,I have encountered many technologies most of them were great but
+        was not very suited for me.But at the end I am comfortable with these two:
       </p>
     </div>
-    <div class="flex space-y-5 flex-col py-5 grow">
+    <div class="flex space-y-5 flex-col py-5 grow font-poppins">
       <SkillsCard
         primary="Mobile Develpoment"
-        secondary={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ab itaque ex minima accusantium deserunt temporibus, aspernatur dolores aliquam ducimus veniam, voluptatem explicabo quam id voluptate magnam velit ad. Quia."}
+        secondary={"Mobile has become a must in these days, thus creating a mobile application is really benificiary.I love to create mobile apps using flutter,it's one of the greatest framework for creating cross-platform apps.I am too learning android framwork along side with kotlin"}
         image="./images/10301602_4412951.jpg"
         background={Colors.teal}
       />
       <SkillsCard
         primary="Backend Development"
-        secondary={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ab itaque ex minima accusantium deserunt temporibus, aspernatur dolores aliquam ducimus veniam, voluptatem explicabo quam id voluptate magnam velit ad. Quia."}
+        secondary={"I love creating API's and integrate them with a frontend app.The language of choice for creating backend in python.I have worked with the top 3 web framwork ie, Django ,Flask and fastapi"}
         image="./images/4103163_1032.jpg"
         background={Colors.pink}
       />

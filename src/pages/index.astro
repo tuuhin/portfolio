@@ -4,14 +4,15 @@ import Footer from "../components/Footer.astro";
 import NavBar from "../components/NavBar/NavBar.svelte";
 import Projects from "../components/projects/Projects.astro";
 import SkillsContainer from "../components/Skills/SkillsContainer.astro";
+import Testimonial from "../components/Testimonials/Testimonial.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="tuuhin_">
   <NavBar client:idle />
-
   <About />
   <SkillsContainer />
   <Projects />
+  <Testimonial />
   <Footer />
 </Layout>

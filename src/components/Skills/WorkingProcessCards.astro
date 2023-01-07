@@ -13,9 +13,13 @@ const { secondary } = Astro.props;
 const color = getColor(Astro.props.bgColor);
 ---
 
-<div class={`p-3 border-2 border-black border-l-8 rounded-r-lg  ${color}`}>
-  <p class="font-bold text-xl pb-1 font-playfair tracking-wide">{title}</p>
-  <p class="text-sm md:tracking-wide">
+<div
+  class={`p-3 border-2 border-black border-l-8 rounded-r-lg text-sm  ${color}`}
+>
+  <p class="font-bold text-xl pb-2 font-playfair tracking-wide">
+    {title}
+  </p>
+  <p class="tracking-wide font-poppins font-normal">
     {secondary}
   </p>
 </div>
