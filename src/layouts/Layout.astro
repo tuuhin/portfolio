@@ -1,42 +1,45 @@
----
-export interface Props {
-  title: string;
-}
-
-const { title } = Astro.props;
----
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="/favicon/icons8-student-16.png"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="/favicon/icons8-student-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/favicon/icons8-student-96.png"
+    />
+    <title class="">{"Tuhin Bhowmick "}</title>
   </head>
   <body>
     <slot />
   </body>
+
+  <style is:global>
+    @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+
+    html {
+      font-family: system-ui, sans-serif;
+      background-color: #f6f6f6;
+      scroll-behavior: smooth;
+    }
+    code {
+      font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    }
+  </style>
 </html>
-
-<style is:global>
-  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
-  @font-face {
-    font-family: "Virgil";
-    src: url("/font/Virgil.woff2") format("woff");
-    font-weight: normal;
-    font-display: swap;
-  }
-
-  html {
-    font-family: system-ui, sans-serif;
-    background-color: #f6f6f6;
-    scroll-behavior: smooth;
-  }
-  code {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-  }
-</style>
