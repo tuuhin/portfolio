@@ -1,0 +1,34 @@
+---
+const learning: string[] = [
+  "flutter",
+  "dart",
+  "django",
+  "python",
+  "android",
+  "kotlin",
+];
+---
+
+<div class="py-2 font-poppins">
+  <p class="text-sm font-medium">
+    These are the few <span
+      class="border-b-2 border-rose-700 text-rose-700 font-bold"
+      >languages
+    </span> and
+    <span class="border-b-2 border-rose-700 text-rose-700 font-bold"
+      >framework
+    </span>
+    that, I am currently working and learning
+  </p>
+  <ul
+    class="text-rose-500 font-bold grid pt-4 grid-cols-2 md:grid-cols-3 gap-3 md:gap-2"
+  >
+    {learning.map((name) => <li class="learning">{name}</li>)}
+  </ul>
+</div>
+
+<style>
+  .learning {
+    @apply transition ease-in-out delay-100 border-2 border-rose-500  px-2 py-1 rounded-lg capitalize text-center hover:bg-rose-500 hover:text-red-300 hover:cursor-pointer;
+  }
+</style>

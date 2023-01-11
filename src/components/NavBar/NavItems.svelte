@@ -8,9 +8,9 @@
     Contacts,
   }
 
-  let selected = NavItem.About;
+  let selected: NavItem = NavItem.About;
 
-  const onTap = (item: NavItem) => (selected = item);
+  const onTap = (item: NavItem): NavItem => (selected = item);
 </script>
 
 <div class={isflex ? "flex ml-10 items-baseline space-x-4" : ""}>
@@ -41,10 +41,10 @@
 
 <style>
   .nav__item {
-    @apply text-gray-300  block px-3 py-2 rounded-md text-base font-semibold hover:bg-blue-600;
+    @apply text-emerald-900  px-3 py-2 rounded-md text-base font-bold tracking-wide hover:bg-emerald-700 hover:text-emerald-300;
   }
 
   .nav__item__selected {
-    @apply bg-blue-900 text-white block px-3 py-2 rounded-md text-base font-medium;
+    @apply bg-emerald-900 text-white block px-3 py-2 rounded-md text-base font-medium;
   }
 </style>

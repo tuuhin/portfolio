@@ -16,13 +16,15 @@
   let colSpan = languages.length < 2 ? "md:col-span-1" : "md:col-span-2";
 </script>
 
-<div class={`${background}  p-6  border-2 border-black rounded-lg  ${colSpan}`}>
+<div
+  class={`group ${background} p-6  border-2 border-black rounded-md  ${colSpan}  hover:shadow-lg transition-all ease-in-out  duration-300 hover:-translate-y-2`}
+>
   {#if typeof image == "string"}
     <img class="clipper rounded-2xl" src={image} alt="Not found" />
   {/if}
   <div class="flex justify-between">
     <p
-      class="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-playfair"
+      class="mb-2 text-2xl font-bold tracking-tight text-slate-900 group-hover:text-black  font-playfair"
     >
       {title}
     </p>
@@ -40,42 +42,17 @@
     </a>
   </div>
 
-  <p class="font-medium text-slate-700">
+  <p class=" text-slate-700 group-hover:text-black ">
     {description}
   </p>
 
   <ul class="list-none pt-2 flex flex-wrap">
     {#each tags as tag}
       <li
-        class="bg-slate-800 px-4 py-1 m-1 text-white font-mono font-medium rounded-lg text-sm capitalize"
+        class="bg-slate-900 px-4 py-1 m-1 text-white font-mono font-normal rounded-md text-sm capitalize group-hover:bg-gray-800"
       >
         {tag}
       </li>
     {/each}
   </ul>
 </div>
-
-<style>
-  .clipper {
-    -webkit-clip-path: polygon(
-      50% 3%,
-      100% 0,
-      97% 50%,
-      100% 100%,
-      50% 97%,
-      0 100%,
-      3% 50%,
-      0 0
-    );
-    clip-path: polygon(
-      50% 3%,
-      100% 0,
-      97% 50%,
-      100% 100%,
-      50% 97%,
-      0 100%,
-      3% 50%,
-      0 0
-    );
-  }
-</style>

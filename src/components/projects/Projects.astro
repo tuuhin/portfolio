@@ -4,12 +4,12 @@ import ProjectCard from "./ProjectCard.svelte";
 ---
 
 <div
-  class="bg-zinc-300 px-5 md:px-10 lg:px-28 py-10 border-t-2 border-black h-fit"
+  class="bg-slate-300 px-5 md:px-10 lg:px-28 py-10 border-t-2 border-black h-fit max-h-min"
   id="projects"
 >
   <div class="flex flex-col justify-center items-center">
     <p class="text-4xl font-black font-playfair">
-      {"Some things that I have built"}
+      {"Some  projects,that I had built"}
     </p>
 
     <p class="tracking-tight text-base font-poppins py-2 max-w-xl text-center">
@@ -18,7 +18,7 @@ import ProjectCard from "./ProjectCard.svelte";
       }
     </p>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-4">
     {projectData.map((e) => <ProjectCard {...e} />)}
   </div>
 </div>

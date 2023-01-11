@@ -1,5 +1,5 @@
 ---
-const learning: string[] = ["flutter", "dart", "django", "android", "kotlin"];
+import Learning from "./Learning.astro";
 ---
 
 <div
@@ -19,12 +19,13 @@ const learning: string[] = ["flutter", "dart", "django", "android", "kotlin"];
       {"About"}
     </p>
     <div class="pt-2 tracking-wide font-poppins">
-      <p class="text-lg pt-4 italic font-poppins font-semibold">
+      <p class="text-lg pt-4 italic font-poppins font-bold">
         Hello!👋 My name is Tuhin and I enjoy learing new things that are trendy
         on the internet and making <span
-          class="font-poppins text-pink-900 font-extrabold capitalize"
+          class="font-poppins text-pink-900 font-black capitalize underline"
           >mobile</span
-        > and <span class="font-poppins text-red-800 font-extrabold capitalize"
+        > and <span
+          class="font-poppins text-red-800 font-black capitalize underline"
           >python</span
         > based apps.
       </p>
@@ -35,31 +36,13 @@ const learning: string[] = ["flutter", "dart", "django", "android", "kotlin"];
         </span>, I was a kid wondering how this wonderful things are made,I was
         facinated by the youtube tutorial videos , due to which I decided to try
         them out and was facinated by the way that just a simple python script
-        can do such hige things. Fast-forward to today,I am a studying<span
+        can do such huge things. Fast-forward to today,I am a studying<span
           class="text-rose-700 font-bold italic"
         >
           Computer Science</span
         > and developing myself through the sources available on the internet.
       </p>
-      <div class="py-2 font-poppins">
-        <p class="text-sm font-medium">
-          These are the few <span
-            class="border-b-2 border-rose-700 text-rose-700 font-bold"
-            >technologies</span
-          > that I am currently working on
-        </p>
-        <ul
-          class="text-rose-500 font-bold grid pt-4 grid-cols-2 md:grid-cols-3 gap-3 md:gap-2"
-        >
-          {
-            learning.map((name) => (
-              <li class="transition ease-in-out delay-100 border-2 border-rose-500  px-2 py-1 rounded-lg capitalize text-center hover:bg-rose-500 hover:text-red-300">
-                {name}
-              </li>
-            ))
-          }
-        </ul>
-      </div>
     </div>
+    <Learning />
   </div>
 </div>

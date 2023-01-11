@@ -6,10 +6,10 @@
 
   let isFocused: boolean = false;
 
-  const onClick = () => (isFocused = !isFocused);
+  const onClick = (): boolean => (isFocused = !isFocused);
 </script>
 
-<nav class="border-b-2 border-black bg-sky-400">
+<nav class="border-b-2 border-black bg-green-500">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <div class="-mr-2 flex md:hidden">
@@ -17,11 +17,13 @@
       </div>
       <div class="flex items-center">
         <div class="flex-shrink-0">
-          <img
-            class="h-8 w-8"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-            alt="Your Company"
-          />
+          <a href="/" class="hover:cursor-pointer">
+            <img
+              class="h-10 w-10 rounded-md"
+              src="https://img.icons8.com/external-victoruler-flat-victoruler/64/null/external-student-occupation-and-people-victoruler-flat-victoruler-1.png"
+              alt="Your Company"
+            />
+          </a>
         </div>
         <div class="hidden md:block">
           <NavItems isflex={true} />

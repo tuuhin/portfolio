@@ -1,4 +1,5 @@
 ---
+import BuildWith from "./BuildWith.astro";
 import Contacts from "./Contacts.astro";
 ---
 
@@ -6,9 +7,7 @@ import Contacts from "./Contacts.astro";
   <p class="text-4xl font-bold tracking-tight text-center font-playfair">
     {" Interested in my work"}
   </p>
-  <p
-    class="font-semibold text-slate-800 pt-2 text-sm font-mono uppercase tracking-wide"
-  >
+  <p class="tracking-tight text-base font-poppins py-2 text-center">
     {" I like to convert ideas into reallity"}
   </p>
   <a
@@ -20,7 +19,5 @@ import Contacts from "./Contacts.astro";
 
   <Contacts />
 
-  <p class="font-semibold font-mono">
-    Copyright &copy; {new Date().getFullYear()} all rights reserved
-  </p>
+  <BuildWith />
 </footer>
