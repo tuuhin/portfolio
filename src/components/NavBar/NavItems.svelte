@@ -41,10 +41,10 @@
 
 <style>
   .nav__item {
-    @apply text-emerald-900  px-3 py-2 rounded-md text-base font-bold tracking-wide hover:bg-emerald-700 hover:text-emerald-300;
+    @apply text-emerald-900 block  px-3 py-2 rounded-md text-base font-bold tracking-wide hover:bg-emerald-700 hover:text-emerald-300;
   }
 
   .nav__item__selected {
-    @apply bg-emerald-900 text-white block px-3 py-2 rounded-md text-base font-medium;
+    @apply bg-emerald-900  text-white block px-3 py-2 rounded-md text-base font-medium;
   }
 </style>

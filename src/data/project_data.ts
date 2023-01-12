@@ -30,7 +30,7 @@ export const projectData: ProjectInfo[] = [
     title: "Pokedex",
     description:
       "The name is self sufficient to describe the project. This is a cross-platform pokedex app made with flutter. An user can look for any type of pokemon data such as the pokemon itself,moves,ability,item,location,types-charts ans so-on",
-    tags: ["pokeapi", "flutter", "cross-platform"],
+    tags: ["pokeapi", "flutter", "cross-platform", "pokemon"],
     languages: [KnownLanguage.Dart],
     projectURL: "https://github.com/tuuhin/pokedex_",
   },
@@ -38,7 +38,7 @@ export const projectData: ProjectInfo[] = [
     title: "Django Medical shop",
     description:
       "A medical-ecommerce site built using python and django.With most of the features like user-auth,reviewing-product,placing-order and many more.This project was a group project targeted for a hackathon",
-    tags: ["Django", "Bootstrap5", "sqlite3", "html"],
+    tags: ["Django", "Bootstrap5", "jinja", "webpage", "shop-ui"],
     languages: [KnownLanguage.Python],
     projectURL: "https://github.com/tuuhin/django-medical-shop",
   },
@@ -54,7 +54,7 @@ export const projectData: ProjectInfo[] = [
     title: "ClockWork",
     description:
       "The clock app in our phone is a very interesting one, it has alarms, stopwatch ,timmer,clock (obiously 😀).Implementing them togerther was fun ,and here are the results that I came forward with a flutter app taht have most of those features",
-    tags: ["alarm-manager", "flutter", "worldtimeapi", "clock"],
+    tags: ["alarm-manager", "flutter", "worldtimeapi", "clock", "Stopwatch"],
     languages: [KnownLanguage.Dart],
     projectURL: "https://github.com/tuuhin/clockwork",
   },
@@ -87,15 +87,15 @@ export const projectData: ProjectInfo[] = [
     title: "Calculator App",
     description:
       "An calculator clone of the in-built calculator that comes with devices.This app add some extra features with calculator like currency convertor ,length convertor,weight convertor and many other",
-    tags: ["Flutter", "calculator-app", "currency-app"],
+    tags: ["Flutter", "calculator-app", "currency-app", "convertors"],
     languages: [KnownLanguage.Dart],
     projectURL: "https://github.com/tuuhin/calculator_",
   },
   {
     title: "The connect",
     description:
-      "A very basic social media like app make using React Js and flask, with features like JWT-token authentication,CRUD functionality with post , adding commmnets and many ohters. This project was mainly created to understand ReactJs",
-    tags: ["React Js", "Flask", "sqlite3"],
+      "A very basic social media like app make using React Js and flask, with features like JWT-token authentication,CRUD functionality with post , adding comments and many ohters. This project was mainly created to understand ReactJs and Flask",
+    tags: ["React Js", "Flask"],
     languages: [KnownLanguage.JavaScript, KnownLanguage.Python],
     projectURL: "https://github.com/tuuhin/theconnect_",
   },

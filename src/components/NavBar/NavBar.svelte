@@ -17,10 +17,10 @@
       </div>
       <div class="flex items-center">
         <div class="flex-shrink-0">
-          <a href="/" class="hover:cursor-pointer">
+          <a href="/">
             <img
-              class="h-10 w-10 rounded-md"
-              src="https://img.icons8.com/external-victoruler-flat-victoruler/64/null/external-student-occupation-and-people-victoruler-flat-victoruler-1.png"
+              class="rounded-md aspect-square h-8 w-8"
+              src="./images/boy-pic.png"
               alt="Your Company"
             />
           </a>

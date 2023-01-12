@@ -28,7 +28,12 @@
     >
       {title}
     </p>
-    <a href={projectURL} target="_blank" rel="noopener noreferrer">
+    <a
+      href={projectURL}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={projectURL}
+    >
       <svg
         width="24px"
         height="24px"
@@ -42,7 +47,7 @@
     </a>
   </div>
 
-  <p class=" text-slate-700 group-hover:text-black ">
+  <p class=" text-slate-900 group-hover:text-black ">
     {description}
   </p>
 
