@@ -11,6 +11,8 @@ const description =
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <!--Facebook meta tags -->
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
     <meta
@@ -19,7 +21,20 @@ const description =
     />
     <meta property="og:url" content="https://tuhinbhowmick.com" />
     <meta property="og:description" content={description} />
-    <meta name="description" content={description} />
+    <!--Twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="tuhinbhowmick.com" />
+    <meta property="twitter:url" content="https://tuhinbhowmick.com" />
+    <meta name="twitter:title" content="Tuhin Bhowmick" />
+    <meta
+      name="twitter:description"
+      content="Hi 👋 I am Tuhin, an student and an application developer.I am interested in mobile development and backend development"
+    />
+    <meta
+      name="twitter:image"
+      content="https://tuhinbhowmick.com/images/og_image.png"
+    />
+
     <link
       type="image/png"
       sizes="16x16"
