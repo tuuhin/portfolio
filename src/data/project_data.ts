@@ -7,9 +7,35 @@ export interface ProjectInfo {
   languages: readonly KnownLanguage[];
   image?: string;
   projectURL: string;
+  websiteURL?: string;
 }
 
 export const projectData: ProjectInfo[] = [
+  {
+    title: "Realtime-Chat-Dart",
+    description:
+      "A realtime chat app made using dart both for frontend and backend.The backend of the app is made using dart_frog and monogdb database.The app uses websockets which enables full duplex realtime communication between the server and the client.",
+    tags: ["Flutter", "dart_frog", "full-stack dart", "websockets"],
+    languages: [KnownLanguage.Dart],
+    projectURL: "https://github.com/tuuhin/realtime-chat-dart",
+  },
+  {
+    title: "Personal Website",
+    description:
+      "My personal website(this one obviously 😄) created with astro and tailwind css.",
+    tags: ["Astro", "Tailwindcss"],
+    languages: [KnownLanguage.Astro],
+    projectURL: "https://github.com/tuuhin/portfolio",
+    websiteURL: "https://tuhinbhowmick.com",
+  },
+  {
+    title: "Pokedex",
+    description:
+      "The name is self sufficient to describe the project. This is a cross-platform pokedex app made with flutter. An user can look for any type of pokemon data such as the pokemon itself,moves,ability,item,location,types-charts ans so-on",
+    tags: ["pokeapi", "flutter", "cross-platform", "pokemon"],
+    languages: [KnownLanguage.Dart],
+    projectURL: "https://github.com/tuuhin/pokedex_",
+  },
   {
     title: "Expense Tracker",
     description:
@@ -26,14 +52,6 @@ export const projectData: ProjectInfo[] = [
     projectURL: "https://github.com/tuuhin/expense_tracker",
   },
 
-  {
-    title: "Pokedex",
-    description:
-      "The name is self sufficient to describe the project. This is a cross-platform pokedex app made with flutter. An user can look for any type of pokemon data such as the pokemon itself,moves,ability,item,location,types-charts ans so-on",
-    tags: ["pokeapi", "flutter", "cross-platform", "pokemon"],
-    languages: [KnownLanguage.Dart],
-    projectURL: "https://github.com/tuuhin/pokedex_",
-  },
   {
     title: "Django Medical shop",
     description:

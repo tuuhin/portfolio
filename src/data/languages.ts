@@ -4,4 +4,5 @@ export enum KnownLanguage {
   TypeScript,
   Python,
   Kotlin,
+  Astro,
 }
