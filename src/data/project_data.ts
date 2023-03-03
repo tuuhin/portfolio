@@ -12,6 +12,14 @@ export interface ProjectInfo {
 
 export const projectData: ProjectInfo[] = [
   {
+    title: "Github Profile viewer",
+    description:
+      "An android that shows a github user profile informations,like basic user data,graphical languages used data,and repository data.",
+    tags: ["Android", "GraphQl"],
+    languages: [KnownLanguage.Kotlin],
+    projectURL: "https://github.com/tuuhin/GithubProfileViewer",
+  },
+  {
     title: "Realtime-Chat-Dart",
     description:
       "A realtime chat app made using dart both for frontend and backend.The backend of the app is made using dart_frog and monogdb database.The app uses websockets which enables full duplex realtime communication between the server and the client.",
