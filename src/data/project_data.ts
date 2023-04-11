@@ -12,9 +12,17 @@ export interface ProjectInfo {
 
 export const projectData: ProjectInfo[] = [
   {
+    title: "FireBase Quiz App",
+    description:
+      "Android Quiz App is an quiz application for Android devices written in Kotlin. It is designed to create and take quizzes in a variety of topics, similar to 🟣 Google Forms. The app is backed by Firebase, a mobile and web application development platform that provides backend as a service (BaaS).",
+    tags: ["Android", "QuizApp", "FireBase", "FireStore", "FireBaseStorage"],
+    languages: [KnownLanguage.Kotlin],
+    projectURL: "https://github.com/tuuhin/AndroidQuizApp",
+  },
+  {
     title: "Github Profile viewer",
     description:
-      "An android that shows a github user profile informations,like basic user data,graphical languages used data,and repository data.",
+      "GitHub Profile Viewer is an Android app that allows you to view a user's GitHub profile information, including their repositories and language-based graphs. With this app, you can easily browse a user's GitHub profile and get an overview of their coding activity.",
     tags: ["Android", "GraphQl"],
     languages: [KnownLanguage.Kotlin],
     projectURL: "https://github.com/tuuhin/GithubProfileViewer",
@@ -26,23 +34,6 @@ export const projectData: ProjectInfo[] = [
     tags: ["Flutter", "dart_frog", "full-stack dart", "websockets"],
     languages: [KnownLanguage.Dart],
     projectURL: "https://github.com/tuuhin/realtime-chat-dart",
-  },
-  {
-    title: "Personal Website",
-    description:
-      "My personal website(this one obviously 😄) created with astro and tailwind css.",
-    tags: ["Astro", "Tailwindcss"],
-    languages: [KnownLanguage.Astro],
-    projectURL: "https://github.com/tuuhin/portfolio",
-    websiteURL: "https://tuhinbhowmick.com",
-  },
-  {
-    title: "Pokedex",
-    description:
-      "The name is self sufficient to describe the project. This is a cross-platform pokedex app made with flutter. An user can look for any type of pokemon data such as the pokemon itself,moves,ability,item,location,types-charts ans so-on",
-    tags: ["pokeapi", "flutter", "cross-platform", "pokemon"],
-    languages: [KnownLanguage.Dart],
-    projectURL: "https://github.com/tuuhin/pokedex_",
   },
   {
     title: "Expense Tracker",
@@ -58,6 +49,15 @@ export const projectData: ProjectInfo[] = [
     ],
     languages: [KnownLanguage.Python, KnownLanguage.Dart],
     projectURL: "https://github.com/tuuhin/expense_tracker",
+  },
+
+  {
+    title: "Pokedex",
+    description:
+      "The name is self sufficient to describe the project. This is a cross-platform pokedex app made with flutter. An user can look for any type of pokemon data such as the pokemon itself,moves,ability,item,location,types-charts ans so-on",
+    tags: ["pokeapi", "flutter", "cross-platform", "pokemon"],
+    languages: [KnownLanguage.Dart],
+    projectURL: "https://github.com/tuuhin/pokedex_",
   },
 
   {
