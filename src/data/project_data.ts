@@ -12,6 +12,14 @@ export interface ProjectInfo {
 
 export const projectData: ProjectInfo[] = [
   {
+    title: "Reminders",
+    description:
+      "Reminder App is an Android app that allows users to save reminders with notifications kind a like 🟡 Google Keep but with lesser functionality. Users can add tasks for each reminder, add multiple labels, and set the date and time for the notification to be triggered.",
+    tags: ["Android", "AlarmApp"],
+    languages: [KnownLanguage.Kotlin],
+    projectURL: "https://github.com/tuuhin/Reminders",
+  },
+  {
     title: "FireBase Quiz App",
     description:
       "Android Quiz App is an quiz application for Android devices written in Kotlin. It is designed to create and take quizzes in a variety of topics, similar to 🟣 Google Forms. The app is backed by Firebase, a mobile and web application development platform that provides backend as a service (BaaS).",
@@ -50,6 +58,14 @@ export const projectData: ProjectInfo[] = [
     languages: [KnownLanguage.Python, KnownLanguage.Dart],
     projectURL: "https://github.com/tuuhin/expense_tracker",
   },
+  {
+    title: "ClockWork",
+    description:
+      "The clock app in our phone is a very interesting one, it has alarms, stopwatch ,timmer,clock (obiously 😀).Implementing them togerther was fun ,and here are the results that I came forward with a flutter app taht have most of those features",
+    tags: ["alarm-manager", "flutter", "worldtimeapi", "clock", "Stopwatch"],
+    languages: [KnownLanguage.Dart],
+    projectURL: "https://github.com/tuuhin/clockwork",
+  },
 
   {
     title: "Pokedex",
@@ -76,14 +92,7 @@ export const projectData: ProjectInfo[] = [
     languages: [KnownLanguage.Kotlin, KnownLanguage.Python],
     projectURL: "https://github.com/tuuhin/android_todo_app",
   },
-  {
-    title: "ClockWork",
-    description:
-      "The clock app in our phone is a very interesting one, it has alarms, stopwatch ,timmer,clock (obiously 😀).Implementing them togerther was fun ,and here are the results that I came forward with a flutter app taht have most of those features",
-    tags: ["alarm-manager", "flutter", "worldtimeapi", "clock", "Stopwatch"],
-    languages: [KnownLanguage.Dart],
-    projectURL: "https://github.com/tuuhin/clockwork",
-  },
+
   {
     title: "React Note App",
     description:
@@ -109,14 +118,7 @@ export const projectData: ProjectInfo[] = [
     languages: [KnownLanguage.Dart],
     projectURL: "https://github.com/tuuhin/weather_app",
   },
-  {
-    title: "Calculator App",
-    description:
-      "An calculator clone of the in-built calculator that comes with devices.This app add some extra features with calculator like currency convertor ,length convertor,weight convertor and many other",
-    tags: ["Flutter", "calculator-app", "currency-app", "convertors"],
-    languages: [KnownLanguage.Dart],
-    projectURL: "https://github.com/tuuhin/calculator_",
-  },
+
   {
     title: "The connect",
     description:
@@ -124,5 +126,13 @@ export const projectData: ProjectInfo[] = [
     tags: ["React Js", "Flask"],
     languages: [KnownLanguage.JavaScript, KnownLanguage.Python],
     projectURL: "https://github.com/tuuhin/theconnect_",
+  },
+  {
+    title: "Calculator App",
+    description:
+      "An calculator clone of the in-built calculator that comes with devices.This app add some extra features with calculator like currency convertor ,length convertor,weight convertor and many other",
+    tags: ["Flutter", "calculator-app", "currency-app", "convertors"],
+    languages: [KnownLanguage.Dart],
+    projectURL: "https://github.com/tuuhin/calculator_",
   },
 ];
