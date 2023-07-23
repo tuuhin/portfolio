@@ -14,18 +14,18 @@
 
   let background = `${langColor[0]}`;
 
-  let colSpan = languages.length < 2 ? "md:col-span-1" : "md:col-span-2";
+  // let colSpan = languages.length < 2 ? "md:col-span-1" : "md:col-span-2";
 </script>
 
 <div
-  class={`group ${background} p-6  border-2 border-black rounded-md  ${colSpan}  hover:shadow-lg transition-all ease-in-out  duration-300 hover:-translate-y-2`}
+  class={`group ${background} p-6  border-2 border-black rounded-md  md:col-span-1  hover:shadow-lg transition-all ease-in-out  duration-300 hover:-translate-y-2`}
 >
   {#if typeof image == "string"}
     <img class="clipper rounded-2xl" src={image} alt="Not found" />
   {/if}
   <div class="flex justify-between">
     <p
-      class="mb-2 text-2xl font-bold tracking-tight text-slate-900 group-hover:text-black  font-playfair"
+      class="mb-2 text-2xl font-bold tracking-tight text-slate-900 group-hover:text-black font-playfair"
     >
       {title}
     </p>
@@ -69,7 +69,7 @@
     </div>
   </div>
 
-  <p class=" text-slate-900 group-hover:text-black ">
+  <p class=" text-slate-900 group-hover:text-black">
     {description}
   </p>
 

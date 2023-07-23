@@ -12,6 +12,14 @@ export interface ProjectInfo {
 
 export const projectData: ProjectInfo[] = [
   {
+    title: "Android Weather App",
+    description:
+      "The AndroidWeatherApp is a simple Android application that provides real-time weather information for the user's location. It allows users to view the current weather conditions, check the forecast,and search for weather updates of different cities. Additionally, it's offers an app widget that displays the current weather on the home screen for quick view.The widgets updates at a predefined interval, adhering to a predetermined refresh rate.",
+    tags: ["Android", "App Widget", "Weather App"],
+    languages: [KnownLanguage.Kotlin],
+    projectURL: "https://github.com/tuuhin/AndroidWeatherApp",
+  },
+  {
     title: "Reminders",
     description:
       "Reminder App is an Android app that allows users to save reminders with notifications kind a like 🟡 Google Keep but with lesser functionality. Users can add tasks for each reminder, add multiple labels, and set the date and time for the notification to be triggered.",
@@ -46,7 +54,7 @@ export const projectData: ProjectInfo[] = [
   {
     title: "Expense Tracker",
     description:
-      "A money tracking app made using flutter with a custom app backend made with django.This is a expense tracker which will trackup with you expense data, the app comes with a user auth system with a profile i.e, you have a customizable profile. A budget mechanism is added so that the expenses can be made track off.",
+      "A money tracking app made using flutter with a custom app backend made with django.This is a expense tracker which will trackup with you expense data, the app comes with a user auth system with a profile i.e, you have a customizable profile. A budget mechanism is added so that the expenses can be made track off",
     tags: [
       "Flutter",
       "Cached-storage",
@@ -55,7 +63,15 @@ export const projectData: ProjectInfo[] = [
       "Flutterbloc",
       "Custom backend",
     ],
-    languages: [KnownLanguage.Python, KnownLanguage.Dart],
+    languages: [KnownLanguage.Dart],
+    projectURL: "https://github.com/tuuhin/expense_tracker",
+  },
+  {
+    title: "Expense Tracker Backend",
+    description:
+      "A money tracking app's backend made with django.This is a expense tracker which will trackup with you expense data, the app comes with a user auth system with a profile i.e, you have a customizable profile. A budget mechanism is added so that the expenses can be made track off.",
+    tags: ["Django", "Django Rest Framework", "JWT-Authentication"],
+    languages: [KnownLanguage.Python],
     projectURL: "https://github.com/tuuhin/expense_tracker",
   },
   {
@@ -120,19 +136,19 @@ export const projectData: ProjectInfo[] = [
   },
 
   {
-    title: "The connect",
-    description:
-      "A very basic social media like app make using React Js and flask, with features like JWT-token authentication,CRUD functionality with post , adding comments and many ohters. This project was mainly created to understand ReactJs and Flask",
-    tags: ["React Js", "Flask"],
-    languages: [KnownLanguage.JavaScript, KnownLanguage.Python],
-    projectURL: "https://github.com/tuuhin/theconnect_",
-  },
-  {
     title: "Calculator App",
     description:
       "An calculator clone of the in-built calculator that comes with devices.This app add some extra features with calculator like currency convertor ,length convertor,weight convertor and many other",
     tags: ["Flutter", "calculator-app", "currency-app", "convertors"],
     languages: [KnownLanguage.Dart],
     projectURL: "https://github.com/tuuhin/calculator_",
+  },
+  {
+    title: "The connect",
+    description:
+      "A very basic social media like app make using React Js and flask, with features like JWT-token authentication,CRUD functionality with post , adding comments and many ohters. This project was mainly created to understand ReactJs and Flask",
+    tags: ["React Js", "Flask"],
+    languages: [KnownLanguage.JavaScript, KnownLanguage.Python],
+    projectURL: "https://github.com/tuuhin/theconnect_",
   },
 ];
