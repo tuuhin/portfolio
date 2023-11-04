@@ -12,6 +12,22 @@ export interface ProjectInfo {
 
 export const projectData: ProjectInfo[] = [
   {
+    title: "Time Management App",
+    description:
+      "The TimeManagementApp is an Android application that helps you to maintain your focus and break times. With Graphical representation of the weeks focus and break count. You can tweak the app settings to your focus and break time to maintain a proper focus to break ratio.",
+    tags: ["Android", "Android Service", "Timer App"],
+    languages: [KnownLanguage.Kotlin],
+    projectURL: "https://github.com/tuuhin/TimeManagementApp",
+  },
+  {
+    title: "Tic Tac Toe Game",
+    description:
+      "This Android project is a multiplayer Tic Tac Toe game that uses websockets for real-time gameplay. Users can anonymously play games or create dedicated rooms with unique codes to challenge friends. The rooms can host multiple boards, and the winner is determined based on the most number of wins across the boards.",
+    tags: ["Android", "Realtime App", "Game", "Websockets", "Custom Backend"],
+    languages: [KnownLanguage.Kotlin],
+    projectURL: "https://github.com/tuuhin/AndroidTicTacToe",
+  },
+  {
     title: "Android Weather App",
     description:
       "The AndroidWeatherApp is a simple Android application that provides real-time weather information for the user's location. It allows users to view the current weather conditions, check the forecast,and search for weather updates of different cities. Additionally, it's offers an app widget that displays the current weather on the home screen for quick view.The widgets updates at a predefined interval, adhering to a predetermined refresh rate.",
