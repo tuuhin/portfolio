@@ -1,18 +1,19 @@
 ---
 import About from "../components/About/About.astro";
-import Footer from "../components/Footer.astro";
+import Footer from "../components/footer/Footer.astro";
 import NavBar from "../components/NavBar/NavBar.svelte";
 import Projects from "../components/projects/Projects.astro";
-import SkillsContainer from "../components/Skills/SkillsContainer.astro";
-import Testimonial from "../components/Testimonials/Testimonial.astro";
+import Skills from "../components/Skills/Skills.astro";
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero/Hero.astro";
 ---
 
 <Layout>
   <NavBar client:load />
+  <Hero />
   <About />
-  <SkillsContainer />
+  <Skills />
   <Projects />
-  <Testimonial />
+  <!-- <Testimonial /> -->
   <Footer />
 </Layout>

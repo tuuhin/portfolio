@@ -9,7 +9,7 @@
   const onClick = (): boolean => (isFocused = !isFocused);
 </script>
 
-<nav class="border-b-2 border-black bg-green-500">
+<nav class="border-t-4 border-black bg-green-300">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <div class="-mr-2 flex md:hidden">
@@ -29,14 +29,20 @@
           <NavItems isflex={true} />
         </div>
       </div>
+      <a
+        href="https://drive.google.com/file/d/1o1HsLNjQb9RBpEfEQmjOsxiuYhGjN35V/view?usp=sharing"
+        class="bg-purple-800 text-white px-4 py-2 rounded-md hover:shadow-md transition-all hover:scale-110 font-poppins"
+        >{"Resume"}</a
+      >
     </div>
   </div>
-
-  <div class="md:hidden" id="mobile-menu">
-    {#if isFocused}
-      <div transition:slide class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-        <NavItems />
-      </div>
-    {/if}
+  <div>
+    <div class="md:hidden" id="mobile-menu">
+      {#if isFocused}
+        <div transition:slide class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+          <NavItems />
+        </div>
+      {/if}
+    </div>
   </div>
 </nav>

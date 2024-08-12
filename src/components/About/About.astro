@@ -1,48 +1,58 @@
 ---
-import Learning from "./Learning.astro";
+import Image from "astro/components/Image.astro";
+import skillsImage from "../../image/skills.webp";
 ---
 
 <div
-  class="bg-rose-300 px-5 md:px-10 lg:px-28 py-10 border-t-2 border-black flex flex-col lg:flex-row-reverse justify-between items-center h-3/5"
+  class="bg-orange-300 px-5 md:px-10 lg:px-28 py-10 border-b-4 border-black flex lg:flex-row flex-col justify-around items-center h-3/5 space-y-4"
   id="about"
 >
   <div class="w-full md:w-2/5">
-    <img
-      src="./images/me.webp"
-      alt="No person image"
-      class="bg-amber-300 mx-auto lg:w-2/3 border-black border-4 border-r-8 border-b-8 rounded-lg w-96 h-fit"
+    <Image
+      src={skillsImage}
+      alt={"A collage depecting skills sets"}
+      class={"rounded-lg border-black border-4 border-b-[12px] border-r-[12px] aspect-square h-96 "}
+      loading={"eager"}
     />
   </div>
-
-  <div class="py-2 max-w-sm md:max-w-xl">
-    <p class="text-4xl font-bold font-playfair tracking-normal">
+  <div
+    class="py-2max-w-md md:max-w-xl flex flex-col items-center lg:items-start"
+  >
+    <h2 class="text-4xl font-bold font-inconsolata tracking-normal">
       {"About"}
-    </p>
+    </h2>
     <div class="pt-2 tracking-wide font-poppins">
-      <p class="text-lg pt-4 italic font-poppins font-bold">
-        Hello!👋 My name is Tuhin and I enjoy learing new things that are trendy
-        on the internet and making <span
-          class="font-poppins text-rose-900 font-black capitalize underline"
-          >mobile</span
-        > and <span
-          class="font-poppins text-red-900 font-black capitalize underline"
-          >python</span
-        > based apps.
-      </p>
-      <p class="pt-2 lg:pt-4 font-medium tracking-tight text-base">
-        My interest in application development started back in <span
-          class="text-rose-900 font-bold italic"
-          >2020
-        </span>, I was a kid wondering how this wonderful things are made,I was
-        fascinated by the youtube tutorial videos , due to which I decided to
-        try them out and was fascinated by the way that just a simple python
-        script can do such huge things. Fast-forward to today,I am a studying<span
-          class="text-rose-900 font-bold italic"
+      <p class="pt-2 lg:pt-4 font-medium tracking-normal text-base">
+        {
+          "My interest in programming in general and development, started back in"
+        }
+        <span class="text-orange-900 font-bold italic">2020,</span>
+        {
+          "It was really facinating and wondering, how some text files create just fancier things "
+        }
+        <span class="text-orange-900 font-semibold"
+          >{
+            "(After working with those silly text files, these are more than simple text files 😅).,"
+          }</span
         >
-          Computer Science</span
-        > and developing myself through the sources available on the internet.
+        <br />
+        {
+          "A watched a lot of youTube videos back then, from every possible programming channels\
+         to try out what they are building. Fast forward to 2024... ,currently I am studying"
+        }
+        <span class="text-orange-900 font-bold italic">
+          {"Computer Science"}
+        </span>
+        {
+          "and developing myself through new technologies on the internet.\
+           Currently, I am working on"
+        }
+        <span class="text-emerald-800 font-extrabold"
+          >{"Android App developement"}</span
+        >
+        {"with "}
+        <span class="text-purple-900 font-extrabold">{"Kotlin"}</span>
       </p>
     </div>
-    <Learning />
   </div>
 </div>

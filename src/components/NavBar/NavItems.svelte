@@ -35,16 +35,16 @@
   <a
     href="#contacts"
     class={selected == NavItem.Contacts ? "nav__item__selected" : "nav__item"}
-    on:click={() => onTap(NavItem.Contacts)}>{"Contacts"}</a
+    on:click={() => onTap(NavItem.Contacts)}>{"Contact"}</a
   >
 </div>
 
 <style>
   .nav__item {
-    @apply text-emerald-900 block  px-3 py-2 rounded-md text-base font-bold tracking-wide hover:bg-emerald-700 hover:text-emerald-300;
+    @apply text-green-800 block  px-3 py-2 rounded-md text-base font-bold tracking-wide hover:border-2 hover:border-green-700 hover:text-green-700;
   }
 
   .nav__item__selected {
-    @apply bg-emerald-900  text-white block px-3 py-2 rounded-md text-base font-medium;
+    @apply bg-green-800  text-white block px-3 py-2 rounded-md text-base font-medium;
   }
 </style>

@@ -93,7 +93,7 @@ export const projectData: ProjectInfo[] = [
   {
     title: "ClockWork",
     description:
-      "The clock app in our phone is a very interesting one, it has alarms, stopwatch ,timmer,clock (obiously 😀).Implementing them togerther was fun ,and here are the results that I came forward with a flutter app taht have most of those features",
+      "The clock app in our phone is a very interesting one, it has alarms, stopwatch ,timmer,clock (obiously 😀).Implementing them togerther was fun ,and here are the results that I came forward with a flutter app that have most of those features",
     tags: ["alarm-manager", "flutter", "worldtimeapi", "clock", "Stopwatch"],
     languages: [KnownLanguage.Dart],
     projectURL: "https://github.com/tuuhin/clockwork",

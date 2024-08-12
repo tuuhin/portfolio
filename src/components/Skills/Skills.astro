@@ -1,43 +1,89 @@
 ---
-import { Colors } from "../../util/Colors";
-import SkillsCard from "./SkillsCard.astro";
+import SkillBlock from "./SkillBlock.astro";
 ---
 
 <div
-  class="flex flex-col justify-evenly items-center lg:flex-row lg:space-x-20"
+  class="bg-lime-300 py-10 border-t-2 border-black px-5 md:px-10 lg:px-28"
+  id="skills"
 >
-  <img
-    class="rounded-lg border-black border-4 border-b-8 border-r-8 aspect-square h-96 md:w-96"
-    src="./images/1162430_336.webp"
-    alt="Skills Image"
-  />
-  <div class="w-fit lg:w-2/5 flex flex-col grow md:max-w-xl">
-    <div>
-      <p class="text-4xl font-bold tracking-wide font-playfair pb-5">
-        {"What are my skills"}<span class="font-extrabold pl-2">?</span>
-      </p>
-      <p class="font-poppins text-base font-medium">
-        In these years of my <span
-          class="font-extrabold border-b-2 border-violet-900 text-violet-900"
-          >programming</span
-        > journey,I have encountered many frameworks and languages,all of them were
-        great and were really fun to work with. But at the end I really liked with
-        these two:
-      </p>
-    </div>
-    <div class="flex space-y-5 flex-col py-5 grow font-poppins">
-      <SkillsCard
-        primary="Mobile Develpoment"
-        secondary={"Mobile has become a must in these days, thus creating a mobile application is really benificiary.I love to create mobile apps using flutter,it's one of the greatest framework for creating cross-platform apps.I am too learning android framework with kotlin"}
-        image="./images/10301602_4412951.webp"
-        background={Colors.teal}
-      />
-      <SkillsCard
-        primary="Backend Development"
-        secondary={"I love creating API's and integrate them with a frontend app.The language of choice for creating backend in python.I have worked with the top 3 web framwork ie, Django ,Flask and Fastapi"}
-        image="./images/4103163_1032.webp"
-        background={Colors.pink}
-      />
-    </div>
+  <div class="flex flex-col items-center space-y-4 w-full">
+    <h2 class="text-4xl font-bold font-inconsolata tracking-normal">
+      {"Skills"}
+    </h2>
+    <p class="font-poppins text-base font-medium w-4/5">
+      {
+        "Intermediate Android developer proficient in Kotlin and Ktor for building robust and scalable mobile applications. Experienced in exploring Flutter for cross-platform development and possessing foundational knowledge of web-based Python frameworks."
+      }
+    </p>
   </div>
+
+  <div class="grid lg:grid-cols-5 grid-cols-2 gap-3 text-lime-950 mt-10">
+    <SkillBlock
+      name="Kotlin"
+      imageSrc="https://skillicons.dev/icons?i=kotlin"
+    />
+    <SkillBlock name="Dart" imageSrc="https://skillicons.dev/icons?i=dart" />
+    <SkillBlock
+      name="Python"
+      imageSrc="https://skillicons.dev/icons?i=python"
+    />
+    <SkillBlock
+      name="Javascript"
+      imageSrc="https://skillicons.dev/icons?i=javascript"
+    />
+    <SkillBlock
+      name="Android Studio"
+      imageSrc="https://skillicons.dev/icons?i=androidstudio"
+    />
+
+    <SkillBlock
+      name="Arduino"
+      imageSrc="https://skillicons.dev/icons?i=arduino"
+    />
+    <SkillBlock name="Asrto" imageSrc="https://skillicons.dev/icons?i=astro" />
+    <SkillBlock name="Bash" imageSrc="https://skillicons.dev/icons?i=bash" />
+
+    <SkillBlock
+      name="Django"
+      imageSrc="https://skillicons.dev/icons?i=django"
+    />
+    <SkillBlock
+      name="Firebase"
+      imageSrc="https://skillicons.dev/icons?i=firebase"
+    />
+    <SkillBlock
+      name="Flutter"
+      imageSrc="https://skillicons.dev/icons?i=flutter"
+    />
+    <SkillBlock name="Flask" imageSrc="https://skillicons.dev/icons?i=flask" />
+    <SkillBlock name="Git" imageSrc="https://skillicons.dev/icons?i=git" />
+    <SkillBlock
+      name="GitHub"
+      imageSrc="https://skillicons.dev/icons?i=github"
+    />
+
+    <SkillBlock
+      name="Graphql"
+      imageSrc="https://skillicons.dev/icons?i=graphql"
+    />
+    <SkillBlock name="Ktor" imageSrc="https://skillicons.dev/icons?i=ktor" />
+    <SkillBlock name="Mysql" imageSrc="https://skillicons.dev/icons?i=mysql" />
+    <SkillBlock
+      name="Mongo"
+      imageSrc="https://skillicons.dev/icons?i=mongodb"
+    />
+    <SkillBlock
+      name="Nodejs"
+      imageSrc="https://skillicons.dev/icons?i=nodejs"
+    />
+    <SkillBlock
+      name="Sqlite"
+      imageSrc="https://skillicons.dev/icons?i=sqlite"
+    />
+  </div>
+  <p class="py-4 text-lime-950 font-playfair italic font-semibold">
+    {
+      " * Currently focusing on mobile development,thus mobile technologies are more brushed"
+    }
+  </p>
 </div>
