@@ -52,6 +52,23 @@ const description =
       href="./favicon/icons8-student-96.png"
     />
     <title>{title}</title>
+    <!-- Analytics -->
+    <script
+      is:inline
+      type="text/partytown"
+      src=`https://www.googletagmanager.com/gtag/js?id=G-83XB4SPKEJ`></script>
+    <script is:inline type="text/partytown">
+      const G_TAG = "G-83XB4SPKEJ";
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", G_TAG);
+      console.log("ANALYTICS IMPLANTED");
+    </script>
+    <!-- Analytics -->
   </head>
   <body>
     <slot />
