@@ -5,6 +5,8 @@ import {
   OG_IMAGE,
   WEBSITE_URL,
 } from "../data/Constants.ts";
+
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -48,6 +50,7 @@ import {
       href="./favicon/icons8-student-96.png"
     />
     <title>{HOME_TITLE}</title>
+    <ViewTransitions />
     <!-- Analytics -->
     <script
       is:inline
@@ -68,9 +71,7 @@ import {
   </head>
   <body>
     <slot />
-  </body>
-
-  <style is:global>
+  </body><style is:global>
     @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");

@@ -69,7 +69,9 @@
     </div>
   </div>
 
-  <p class=" text-slate-900 group-hover:text-black">
+  <p
+    class=" text-slate-900 group-hover:text-black font-inconsolata font-medium text-base"
+  >
     {description}
   </p>
 
