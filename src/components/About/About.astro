@@ -1,28 +1,15 @@
----
-import Image from "astro/components/Image.astro";
-import skillsImage from "../../image/skills.webp";
----
-
 <div
   class="bg-orange-300 px-5 md:px-10 lg:px-28 py-10 border-b-4 border-black flex lg:flex-row flex-col justify-around items-center h-3/5 space-y-4"
   id="about"
 >
-  <div class="w-full md:w-2/5">
-    <Image
-      src={skillsImage}
-      alt={"A collage depecting skills sets"}
-      class={"rounded-lg border-black border-4 border-b-[12px] border-r-[12px] aspect-square h-96 "}
-      loading={"eager"}
-    />
-  </div>
-  <div
-    class="py-2max-w-md md:max-w-xl flex flex-col items-center lg:items-start"
-  >
-    <h2 class="text-4xl font-bold font-inconsolata tracking-normal">
+  <div class="py-2 w-full flex flex-col items-center lg:items-start">
+    <h2
+      class="text-5xl font-bold font-monument tracking-normal uppercase text-orange-950"
+    >
       {"About"}
     </h2>
     <div class="pt-2 tracking-wide font-poppins">
-      <p class="pt-2 lg:pt-4 font-medium tracking-normal text-base">
+      <p class="pt-2 lg:pt-4 font-medium tracking-normal text-lg">
         {
           "My interest in programming in general and development, started back in"
         }
@@ -47,11 +34,11 @@ import skillsImage from "../../image/skills.webp";
           "and developing myself through new technologies on the internet.\
            Currently, I am working on"
         }
-        <span class="text-emerald-800 font-extrabold"
+        <span class="text-emerald-800 font-extrabold underline"
           >{"Android App development"}</span
         >
         {"with "}
-        <span class="text-purple-900 font-extrabold">{"Kotlin"}</span>
+        <span class="text-purple-900 font-extrabold underline">{"Kotlin"}</span>
       </p>
     </div>
   </div>

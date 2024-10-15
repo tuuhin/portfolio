@@ -1,11 +1,11 @@
 ---
+import { HERO_TITLE, HERO_DESC } from "../../data/Constants";
 import Image from "astro/components/Image.astro";
 import heroImage from "../../image/me.webp";
 ---
 
 <div
   class="bg-cyan-300 px-5 lg:px-28 py-10 border-t-4 border-b-4 border-black flex flex-col lg:flex-row-reverse lg:justify-around items-center h-3/5 md:space-y-4"
-  id="about"
 >
   <div class="w-full md:w-2/5">
     <Image
@@ -21,15 +21,13 @@ import heroImage from "../../image/me.webp";
     class="py-2 max-w-md md:max-w-xl flex flex-col items-center lg:items-start"
   >
     <h1
-      class="text-4xl lg:text-6xl font-bold font-inconsolata tracking-normal text-pretty"
+      class="text-4xl lg:text-6xl font-bold font-monument tracking-wide text-pretty spac text-cyan-950"
     >
-      {"Tuhin Bhowmick"}
+      {HERO_TITLE}
     </h1>
     <div class="pt-2 tracking-wide font-poppins">
       <p class="text-lg pt-4 font-poppins font-medium text-center lg:text-left">
-        {
-          "Android developer with a strong foundation in mobile app development. Possessing two years of hands-on experience in building robust and user-centric applications."
-        }
+        {HERO_DESC}
       </p>
     </div>
   </div>
