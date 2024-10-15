@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { projectData } from "../data/project_data";
+import ProjectCard from "../components/projects/ProjectCard.svelte";
+import BuildWith from "../components/footer/BuildWith.astro";
+---
+
+<Layout>
+  <div
+    class="bg-neutral-300 px-5 md:px-10 lg:px-28 py-10 border-t-2 border-black h-fit max-h-min"
+  >
+    <div class="flex flex-col justify-center items-center">
+      <h1 class="text-5xl font-bold font-inconsolata tracking-normal">
+        {"Projects"}
+      </h1>
+
+      <p class="font-poppins text-base font-medium py-2 max-w-3xl text-center">
+        {
+          "These are all the projects I have developed, each a testament to my hard work, creativity, and determination to deliver high-quality results."
+        }
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-4">
+      {projectData.map((e) => <ProjectCard {...e} />)}
+    </div>
+    <BuildWith />
+  </div>
+</Layout>
