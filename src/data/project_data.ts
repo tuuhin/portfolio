@@ -8,24 +8,54 @@ export interface ProjectInfo {
   image?: string;
   projectURL: string;
   websiteURL?: string;
+  pinned?: boolean;
 }
 
 export const projectData: ProjectInfo[] = [
   {
+    title: "Recorder App",
+    description:
+      "An android audio recorder app, designed to simplify the process of capturing and managing recordings.With a clean and intuitive interface, this app offers a seamless user experience.",
+    tags: ["Android", "Jetpack Compose", "Media Recorder", "ExoPlayer"],
+    languages: [KnownLanguage.Kotlin],
+    projectURL: "https://github.com/tuuhin/BTAndroidApp",
+    pinned: true,
+  },
+  {
+    title: "Bluetooth Android App",
+    description:
+      "This Bluetooth Android Terminal App facilitates interaction with Bluetooth and Bluetooth Low Energy (BLE) devices. The app provides a user-friendly interface to manage connections, interact with devices.",
+    tags: ["Android", "Bluetooth", "BLE", "BluetoothController"],
+    languages: [KnownLanguage.Kotlin],
+    projectURL: "https://github.com/tuuhin/RecorderApp",
+    pinned: true,
+  },
+  {
+    title: "ScannerAndroid App",
+    description:
+      "ScannerAndroid App is a scanner-based app that can scan barcode, qr-codes and image labels. It takes help from Google's ML Kit barcode scanner and image labeling api to recognize barcodes and labels within images or camera stream.",
+    tags: ["Android", "MLKit", "Bar Code Scanner", "On device ML"],
+    languages: [KnownLanguage.Kotlin],
+    projectURL: "https://github.com/tuuhin/ScannerAndroidApp",
+  },
+  {
     title: "Time Management App",
     description:
-      "The TimeManagementApp is an Android application that helps you to maintain your focus and break times. With Graphical representation of the weeks focus and break count. You can tweak the app settings to your focus and break time to maintain a proper focus to break ratio.",
+      "The TimeManagementApp is an Android application that helps you to maintain your focus and break times. With Graphical representation of the weeks focus and break count.",
     tags: ["Android", "Android Service", "Timer App"],
     languages: [KnownLanguage.Kotlin],
     projectURL: "https://github.com/tuuhin/TimeManagementApp",
+    pinned: true,
   },
+
   {
     title: "Tic Tac Toe Game",
     description:
-      "This Android project is a multiplayer Tic Tac Toe game that uses websockets for real-time gameplay. Users can anonymously play games or create dedicated rooms with unique codes to challenge friends. The rooms can host multiple boards, and the winner is determined based on the most number of wins across the boards.",
+      "This Android project is a multiplayer Tic Tac Toe game that uses websockets for real-time gameplay. Users can anonymously play games or create dedicated rooms with unique codes to challenge friends.",
     tags: ["Android", "Realtime App", "Game", "Websockets", "Custom Backend"],
     languages: [KnownLanguage.Kotlin],
     projectURL: "https://github.com/tuuhin/AndroidTicTacToe",
+    pinned: true,
   },
   {
     title: "Android Weather App",
@@ -42,6 +72,7 @@ export const projectData: ProjectInfo[] = [
     tags: ["Android", "AlarmApp"],
     languages: [KnownLanguage.Kotlin],
     projectURL: "https://github.com/tuuhin/Reminders",
+    pinned: true,
   },
   {
     title: "FireBase Quiz App",
@@ -50,6 +81,7 @@ export const projectData: ProjectInfo[] = [
     tags: ["Android", "QuizApp", "FireBase", "FireStore", "FireBaseStorage"],
     languages: [KnownLanguage.Kotlin],
     projectURL: "https://github.com/tuuhin/AndroidQuizApp",
+    pinned: true,
   },
   {
     title: "Github Profile viewer",

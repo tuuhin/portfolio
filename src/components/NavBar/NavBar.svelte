@@ -31,7 +31,7 @@
       </div>
       <a
         href="https://drive.google.com/file/d/1o1HsLNjQb9RBpEfEQmjOsxiuYhGjN35V/view?usp=sharing"
-        class="bg-purple-800 text-white px-4 py-2 rounded-md hover:shadow-md transition-all hover:scale-110 font-poppins"
+        class="bg-emerald-800 text-white px-4 py-2 rounded-md hover:shadow-md transition-all hover:scale-110 font-poppins"
         >{"Resume"}</a
       >
     </div>

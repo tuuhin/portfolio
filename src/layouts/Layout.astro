@@ -1,9 +1,10 @@
 ---
-const title = "Tuhin Bhowmick | Android  Developer |Jetpack Compose | Kotlin";
-
-const description =
-  "Hello 👋 I am  Tuhin, an enthusiastic android developer with 2 years of hands on experience.\
-  Skilled in working with jetpack compose, kotlin ,coroutines and others.";
+import {
+  HOME_TITLE,
+  HOME_DESC,
+  OG_IMAGE,
+  WEBSITE_URL,
+} from "../data/Constants.ts";
 ---
 
 <!doctype html>
@@ -12,26 +13,21 @@ const description =
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={description} />
+    <meta name="description" content={HOME_DESC} />
     <!--Facebook meta tags -->
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={HOME_TITLE} />
+    <meta property="og:description" content={HOME_DESC} />
+    <meta property="og:url" content={WEBSITE_URL} />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://tuhinbhowmick.com/images/og_image.svg"
-    />
-    <meta property="og:url" content="https://tuhinbhowmick.in" />
-    <meta property="og:description" content={description} />
+    <meta property="og:image" content={OG_IMAGE} />
     <!--Twitter meta tags -->
+    <meta name="twitter:title" content={HOME_TITLE} />
+    <meta name="twitter:description" content={HOME_DESC} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="tuhinbhowmick.in" />
-    <meta property="twitter:url" content="https://tuhinbhowmick.in" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <meta
-      name="twitter:image"
-      content="https://tuhinbhowmick.com/images/og_image.svg"
-    />
+    <meta property="twitter:url" content={WEBSITE_URL} />
+    <meta name="twitter:image" content={OG_IMAGE} />
+    <!-- Apple touch icon -->
     <link rel="apple-touch-icon" href="./favicon/icons8-student-16.png" />
     <link
       type="image/png"
@@ -51,7 +47,7 @@ const description =
       sizes="96x96"
       href="./favicon/icons8-student-96.png"
     />
-    <title>{title}</title>
+    <title>{HOME_TITLE}</title>
     <!-- Analytics -->
     <script
       is:inline
