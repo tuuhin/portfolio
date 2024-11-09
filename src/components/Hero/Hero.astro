@@ -10,7 +10,10 @@ import heroImage from "../../image/me.webp";
   <div class="w-full md:w-2/5">
     <Image
       src={heroImage}
+      srcset={"/image/me/me_xs.webp"}
       alt={"This is me, tuhin bhowmick"}
+      widths={[240, 540, 720, heroImage.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${heroImage.width}px`}
       class={"bg-purple-300 mx-auto lg:w-2/3 border-black border-4 border-r-[12px] border-b-[12px] rounded-lg w-96 h-fit"}
       loading={"eager"}
       decoding={"auto"}
