@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("/fonts/MonumentExtended-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-monument: "MonumentExtended";
+  --font-inconsolata: "Inconsolata";
+  --font-playfair: "Playfair Display";
+}

@@ -1,7 +1,7 @@
 {
   "name": "@tuuhin/portfolio",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -12,16 +12,19 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/partytown": "^2.1.2",
-    "@astrojs/svelte": "^5.7.3",
-    "@astrojs/tailwind": "^5.1.2",
-    "astro": "^4.16.10",
-    "svelte": "^4.2.18",
-    "tailwindcss": "^3.4.9",
-    "typescript": "^5.5.4"
+    "@astrojs/mdx": "^4.2.6",
+    "@astrojs/partytown": "^2.1.4",
+    "@astrojs/svelte": "^7.0.13",
+    "@astrojs/ts-plugin": "^1.10.4",
+    "@tailwindcss/vite": "^4.1.7",
+    "astro": "^5.7.14",
+    "svelte": "^5.32.1",
+    "tailwindcss": "^4.1.7",
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
     "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.8"
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "svelte-preprocess": "^6.0.3"
   }
 }

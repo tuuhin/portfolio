@@ -45,11 +45,10 @@ export const projectData: ProjectInfo[] = [
     tags: ["Android", "Android Service", "Timer App"],
     languages: [KnownLanguage.Kotlin],
     projectURL: "https://github.com/tuuhin/TimeManagementApp",
-    pinned: true,
   },
 
   {
-    title: "Tic Tac Toe Game",
+    title: "Multiplayer Tic Tac Toe",
     description:
       "This Android project is a multiplayer Tic Tac Toe game that uses websockets for real-time gameplay. Users can anonymously play games or create dedicated rooms with unique codes to challenge friends.",
     tags: ["Android", "Realtime App", "Game", "Websockets", "Custom Backend"],
@@ -81,7 +80,6 @@ export const projectData: ProjectInfo[] = [
     tags: ["Android", "QuizApp", "FireBase", "FireStore", "FireBaseStorage"],
     languages: [KnownLanguage.Kotlin],
     projectURL: "https://github.com/tuuhin/AndroidQuizApp",
-    pinned: true,
   },
   {
     title: "Github Profile viewer",
@@ -138,6 +136,7 @@ export const projectData: ProjectInfo[] = [
     tags: ["pokeapi", "flutter", "cross-platform", "pokemon"],
     languages: [KnownLanguage.Dart],
     projectURL: "https://github.com/tuuhin/pokedex_",
+    pinned: true,
   },
 
   {

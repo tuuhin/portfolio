@@ -1,3 +1,16 @@
 {
-  "extends": "astro/tsconfigs/strictest"
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "baseUrl": ".",
+    "paths": {
+      "@images/*": ["src/images/*"],
+      "@data/*": ["src/data/*"]
+    },
+    "plugins": [
+      {
+        "name": "@astrojs/ts-plugin"
+      }
+    ]
+  }
 }

@@ -1,5 +1,5 @@
 ---
-import { HERO_TITLE, HERO_DESC } from "../../data/Constants";
+import { HERO_TITLE, HERO_DESC } from "@data/Constants";
 import Image from "astro/components/Image.astro";
 import heroImage from "../../image/me.webp";
 ---
@@ -10,7 +10,6 @@ import heroImage from "../../image/me.webp";
   <div class="w-full md:w-2/5">
     <Image
       src={heroImage}
-      srcset={"/image/me/me_xs.webp"}
       alt={"This is me, tuhin bhowmick"}
       widths={[240, 540, 720, heroImage.width]}
       sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${heroImage.width}px`}
