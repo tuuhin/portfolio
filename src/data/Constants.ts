@@ -8,7 +8,7 @@ export const HOME_DESC =
 
 export const WEBSITE_URL = "https://tuhinbhowmick.in";
 
-export const OG_IMAGE = "/images/og_image.svg";
+export const OG_IMAGE = `${WEBSITE_URL}/images/og_image.png`;
 
 export const HERO_TITLE = "Tuhin Bhowmick";
 

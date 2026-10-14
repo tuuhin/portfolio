@@ -16,15 +16,6 @@
         <NavButton {onClick} />
       </div>
       <div class="flex items-center">
-        <div class="flex-shrink-0">
-          <a href="/" aria-label="home">
-            <img
-              class="aspect-square h-8 w-8 border-2 border-ink"
-              src="./images/boy-pic.png"
-              alt="Tuhin Bhowmick"
-            />
-          </a>
-        </div>
         <div class="hidden md:block">
           <NavItems isflex={true} />
         </div>

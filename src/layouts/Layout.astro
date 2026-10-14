@@ -26,6 +26,8 @@ import { Schema } from "astro-seo-schema";
     <meta property="og:url" content={WEBSITE_URL} />
     <meta property="og:type" content="website" />
     <meta property="og:image" content={OG_IMAGE} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <!--Twitter meta tags -->
     <meta name="twitter:title" content={HOME_TITLE} />
     <meta name="twitter:description" content={HOME_DESC} />
@@ -33,25 +35,30 @@ import { Schema } from "astro-seo-schema";
     <meta property="twitter:domain" content="tuhinbhowmick.in" />
     <meta property="twitter:url" content={WEBSITE_URL} />
     <meta name="twitter:image" content={OG_IMAGE} />
-    <!-- Apple touch icon -->
-    <link rel="apple-touch-icon" href="./favicon/icons8-student-16.png" />
+    <!-- Favicon + Apple touch icon -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link
       type="image/png"
-      sizes="16x16"
+      sizes="96x96"
       rel="icon"
-      href="./favicon/icons8-student-16.png"
+      href="/favicon/favicon-96.png"
     />
     <link
       type="image/png"
       sizes="32x32"
       rel="icon"
-      href="./favicon/icons8-student-32.png"
+      href="/favicon/favicon-32.png"
     />
     <link
-      rel="icon"
       type="image/png"
-      sizes="96x96"
-      href="./favicon/icons8-student-96.png"
+      sizes="16x16"
+      rel="icon"
+      href="/favicon/favicon-16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
