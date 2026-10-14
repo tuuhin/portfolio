@@ -1,16 +1,81 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: "MonumentExtended";
-  src: url("/fonts/MonumentExtended-Regular.otf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+@theme {
+  /* Swiss Industrial Print substrate */
+  --color-paper: #f4f4f0;
+  --color-paper-alt: #eae8e3;
+  --color-ink: #0a0a0a;
+  --color-accent: #e61919;
+
+  /* Neo-brutalist flat fills (from reference palette) */
+  --color-mintgreen: #7fc8b4;
+  --color-salmon: #f5a47c;
+  --color-blush: #f5a0a8;
+  --color-skyblue: #a8d4e8;
+  --color-butter: #f5d64e;
+  --color-mint: #b5e3c6;
+  --color-teal: #2fc4c4;
+
+  --font-display: "Archivo Black", "Arial Black", sans-serif;
+  --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
 }
 
-@theme {
-  --font-poppins: "Poppins", sans-serif;
-  --font-monument: "MonumentExtended";
-  --font-inconsolata: "Inconsolata";
-  --font-playfair: "Playfair Display";
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-paper);
+  }
+}
+
+@layer utilities {
+  /* Macro-typography: massive, tight, uppercase structural headers */
+  .type-macro {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+    line-height: 0.9;
+  }
+
+  /* Micro-typography: small technical metadata, mechanical spacing */
+  .type-micro {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.6875rem;
+  }
+
+  /* Registration crosshair placed at grid intersections */
+  .crosshair {
+    position: absolute;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1;
+    color: var(--color-ink);
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* Global analog grain — unified physical media feel */
+  .noise-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    pointer-events: none;
+    opacity: 0.045;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
 }

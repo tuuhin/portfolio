@@ -4,7 +4,7 @@
 
 <button
   type="button"
-  class="inline-flex items-center justify-center rounded-md bg-fuchsia-700 p-2 border-2 border-black text-black focus:ring-offset-2 focus:ring-offset-gray-800"
+  class="inline-flex items-center justify-center border-2 border-ink bg-paper p-2 text-ink transition-colors hover:bg-ink hover:text-paper focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
   aria-controls="mobile-menu"
   aria-expanded="false"
   on:click={onClick}

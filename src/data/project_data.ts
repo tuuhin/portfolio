@@ -13,12 +13,48 @@ export interface ProjectInfo {
 
 export const projectData: ProjectInfo[] = [
   {
+    title: "BluePad",
+    description:
+      "An offline-first sketch and note-taking application for Android and Windows built with Kotlin Multiplatform and Compose Multiplatform. Implements proximity-based device discovery and peer-to-peer sketch synchronization over Bluetooth Low Energy, without cloud services or internet connectivity, with trusted-device pairing and encrypted local storage.",
+    tags: [
+      "Kotlin Multiplatform",
+      "Compose Multiplatform",
+      "BLE",
+      "C++",
+      "Offline-First",
+    ],
+    languages: [KnownLanguage.Kotlin],
+    projectURL: "https://github.com/tuuhin/BluePad",
+    pinned: true,
+  },
+  {
+    title: "KMP Battery Manager",
+    description:
+      "An open-source Kotlin Multiplatform library and sample application for accessing battery status and power metrics across Android, iOS, macOS, Linux, and Windows. Platform-specific battery APIs are abstracted through Kotlin's expect/actual mechanism, exposing a consistent API with Coroutines and Flow for asynchronous battery-state observation.",
+    tags: [
+      "Kotlin Multiplatform",
+      "Kotlin/Native",
+      "Coroutines",
+      "Flow",
+      "Nucleus Plugin",
+    ],
+    languages: [KnownLanguage.Kotlin],
+    projectURL: "https://github.com/tuuhin/KmpBattery",
+    pinned: true,
+  },
+  {
     title: "Recorder App",
     description:
-      "An android audio recorder app, designed to simplify the process of capturing and managing recordings.With a clean and intuitive interface, this app offers a seamless user experience.",
-    tags: ["Android", "Jetpack Compose", "Media Recorder", "ExoPlayer"],
+      "An Android audio recording application with support for multiple audio codecs and configurable recording quality. Features background recording with foreground services and persistent notification controls, an in-app audio player, and interactive waveform-based editing tools for trimming recordings and navigating audio samples.",
+    tags: [
+      "Android",
+      "Jetpack Compose",
+      "Media Framework",
+      "Foreground Services",
+      "Waveform Editing",
+    ],
     languages: [KnownLanguage.Kotlin],
-    projectURL: "https://github.com/tuuhin/BTAndroidApp",
+    projectURL: "https://github.com/tuuhin/RecorderApp",
     pinned: true,
   },
   {
@@ -27,7 +63,7 @@ export const projectData: ProjectInfo[] = [
       "This Bluetooth Android Terminal App facilitates interaction with Bluetooth and Bluetooth Low Energy (BLE) devices. The app provides a user-friendly interface to manage connections, interact with devices.",
     tags: ["Android", "Bluetooth", "BLE", "BluetoothController"],
     languages: [KnownLanguage.Kotlin],
-    projectURL: "https://github.com/tuuhin/RecorderApp",
+    projectURL: "https://github.com/tuuhin/BTAndroidApp",
     pinned: true,
   },
   {

@@ -6,27 +6,28 @@ import BuildWith from "../components/footer/BuildWith.astro";
 ---
 
 <Layout>
-  <div
-    class="bg-neutral-300 px-5 md:px-10 lg:px-28 py-10 border-t-2 border-black h-fit max-h-min"
+  <section
+    class="h-fit max-h-min border-t-2 border-ink bg-skyblue px-5 py-14 md:px-10 lg:px-28"
   >
-    <div class="flex flex-col justify-center items-center">
-      <h1
-        class="text-5xl font-bold font-monument tracking-normal text-neutral-950"
-      >
+    <div class="flex flex-col items-center justify-center">
+      <p class="type-micro font-bold">
+        <span class="text-accent">///</span> {"COMPLETE INDEX"}
+      </p>
+      <h1 class="type-macro mt-2 text-[clamp(2.5rem,10vw,3.75rem)] text-ink">
         {"Projects"}
       </h1>
 
-      <p class="font-poppins text-base font-medium py-2 max-w-3xl text-center">
+      <p class="max-w-3xl py-2 text-center text-base font-medium">
         {
           "These are all the projects I have developed, each a testament to my hard work, creativity, and determination to deliver high-quality results."
         }
       </p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-4">
+    <div class="grid grid-cols-1 gap-5 py-4 md:grid-cols-2 lg:grid-cols-3">
       {projectData.map((e) => <ProjectCard {...e} />)}
     </div>
     <div class="mt-4">
       <BuildWith />
     </div>
-  </div>
+  </section>
 </Layout>

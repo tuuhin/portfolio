@@ -1,0 +1,70 @@
+---
+interface ExperienceItem {
+  company: string;
+  role: string;
+  period: string;
+  location: string;
+  points: string[];
+}
+
+const experience: ExperienceItem[] = [
+  {
+    company: "Mobrio Studio",
+    role: "Associate Software Developer",
+    period: "APR 2026 — OCT 2026",
+    location: "REMOTE",
+    points: [
+      "Developed responsive interfaces for the application platform using Compose Multiplatform, translating Figma designs into reusable user-interface components.",
+      "Integrated Firebase authentication on Android, iOS, and Web platforms.",
+      "Completed a guitar chord-chart editor that supports chart creation and playing.",
+      "Implemented in-app chord-library with playback by integrating a custom C/C++ audio layer with FluidSynth, enabling cross-platform audio rendering.",
+      "Implemented PDF export for chord charts and used Protocol Buffers (Protobuf) for compact data serialization and chart sharing.",
+    ],
+  },
+];
+---
+
+<section
+  class="border-b-2 border-ink bg-paper-alt px-5 py-14 md:px-10 lg:px-28"
+  id="experience"
+>
+  <div class="flex w-full flex-col items-center space-y-4">
+    <p class="type-micro font-bold">
+      <span class="text-accent">///</span> {"03 — SERVICE RECORD"}
+    </p>
+    <h2 class="type-macro text-[clamp(2.5rem,10vw,3.75rem)] text-ink">{"Experience"}</h2>
+  </div>
+
+  <div class="mt-10 grid gap-px border-2 border-ink bg-ink">
+    {
+      experience.map((job) => (
+        <article class="grid gap-px bg-ink md:grid-cols-[240px_1fr]">
+          <header class="flex flex-row items-center justify-between gap-4 bg-butter p-5 text-ink md:flex-col md:items-start md:justify-start md:gap-2">
+            <p class="type-micro font-bold">
+              {job.period}
+            </p>
+            <p class="type-micro font-bold text-accent">
+              {job.location}
+            </p>
+          </header>
+          <div class="bg-paper p-5 md:p-6">
+            <h3 class="type-macro text-2xl text-ink md:text-3xl">{job.company}</h3>
+            <p class="mt-1 font-mono text-xs uppercase tracking-[0.08em] font-bold text-ink">
+              {job.role}
+            </p>
+            <ul class="mt-4 space-y-2 border-t border-ink pt-4">
+              {job.points.map((point) => (
+                <li class="flex gap-3 text-sm leading-relaxed font-medium">
+                  <span class="mt-1 shrink-0 font-mono text-xs font-bold text-accent">
+                    {">>>"}
+                  </span>
+                  {point}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>

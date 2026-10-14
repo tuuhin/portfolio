@@ -3,34 +3,31 @@ import { projectData } from "../../data/project_data";
 import ProjectCard from "./ProjectCard.svelte";
 ---
 
-<div
-  class="bg-slate-300 px-5 md:px-10 lg:px-28 py-10 border-t-4 border-b-4 border-black h-fit max-h-min"
+<section
+  class="h-fit max-h-min border-y-2 border-ink bg-skyblue px-5 py-14 md:px-10 lg:px-28"
   id="projects"
 >
-  <div class="flex flex-col justify-center items-center">
-    <p
-      class="text-4xl md:text-5xl font-bold font-monument tracking-wide text-slate-950"
-    >
-      {"Projects"}
+  <div class="flex flex-col items-center justify-center">
+    <p class="type-micro font-bold">
+      <span class="text-accent">///</span> {"04 — INDEX OF WORK"}
     </p>
+    <p class="type-macro mt-2 text-[clamp(2.5rem,10vw,3.75rem)] text-ink">{"Projects"}</p>
 
-    <p
-      class="font-poppins font-medium py-2 max-w-3xl text-center tracking-normal"
-    >
+    <p class="max-w-3xl py-2 text-center font-medium tracking-normal">
       {
         "These are some of the recent projects I have been deeply involved in, each reflecting my commitment to innovation and delivering impactful results."
       }
     </p>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-4">
+  <div class="grid grid-cols-1 gap-5 py-4 md:grid-cols-2 lg:grid-cols-3">
     {projectData.filter((e) => e.pinned).map((e) => <ProjectCard {...e} />)}
   </div>
   <div class="text-center">
     <a
-      class="inline-flex justify-center text-md font-bold uppercase py-3 px-10 bg-stone-300 text-black my-5 border-2 border-b-4 border-r-4 border-black rounded hover:shadow-lg tracking-wider font-poppins hover:text-stone-100 hover:bg-black transition-all hover:-translate-y-2"
+      class="type-micro inline-flex justify-center border-2 border-ink bg-teal px-10 py-3 font-bold text-ink transition-colors my-5 hover:bg-ink hover:text-paper"
       href="/projects"
     >
-      {"View More Projects"}
+      {"View More Projects >>>"}
     </a>
   </div>
-</div>
+</section>

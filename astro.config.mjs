@@ -1,5 +1,4 @@
 import { defineConfig } from "astro/config";
-import { sveltePreprocess } from "svelte-preprocess";
 
 import svelte from "@astrojs/svelte";
 
@@ -16,14 +15,7 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://tuhinbhowmick.in",
   integrations: [
-    svelte({
-      preprocess: sveltePreprocess({
-        // THIS IS THE KEY PART: enable preprocessing for script tags
-        script: true,
-        // You can also add other preprocessors if needed, e.g., for CSS
-        // style: true,
-      }),
-    }),
+    svelte(),
     partytown({
       config: {
         forward: ["dataLayer.push"],

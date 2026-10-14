@@ -1,81 +1,89 @@
 ---
-import SkillBlock from "./SkillBlock.astro";
+const skillGroups: { label: string; skills: string[] }[] = [
+  {
+    label: "Languages",
+    skills: ["Kotlin", "C/C++", "SQL", "Python"],
+  },
+  {
+    label: "Android & Multiplatform",
+    skills: [
+      "Android SDK",
+      "Jetpack Compose",
+      "Compose Multiplatform",
+      "Kotlin Multiplatform",
+      "Android NDK",
+    ],
+  },
+  {
+    label: "Backend & Data",
+    skills: [
+      "Ktor",
+      "Spring Boot",
+      "Firebase",
+      "REST APIs",
+      "WebSockets",
+      "Protocol Buffers",
+    ],
+  },
+  {
+    label: "Native & Systems",
+    skills: ["JNI", "C-Interop", "Kotlin/Native", "BLE"],
+  },
+  {
+    label: "Tools & Practices",
+    skills: ["Git", "Gradle", "Android Studio"],
+  },
+];
+
+const chipPalette = [
+  "bg-salmon",
+  "bg-blush",
+  "bg-skyblue",
+  "bg-butter",
+  "bg-mint",
+  "bg-teal",
+];
 ---
 
-<div
-  class="bg-lime-300 py-10 border-t-2 border-black px-5 md:px-10 lg:px-28"
+<section
+  class="border-b-2 border-ink bg-mint px-5 py-14 md:px-10 lg:px-28"
   id="skills"
 >
-  <div class="flex flex-col items-center space-y-4 w-full">
-    <h2 class="text-4xl md:text-5xl font-bold font-monument tracking-wide text-lime-950">
-      {"Skills"}
-    </h2>
-    <p class="font-poppins font-medium w-4/5 text-md">
+  <div class="flex w-full flex-col items-center space-y-4">
+    <p class="type-micro font-bold">
+      <span class="text-accent">///</span> {"02 — CAPABILITIES"}
+    </p>
+    <h2 class="type-macro text-[clamp(2.5rem,10vw,3.75rem)] text-ink">{"Skills"}</h2>
+    <p class="max-w-4/5 text-center text-md font-medium">
       {
-        "Intermediate Android developer proficient in Kotlin and Ktor for building robust and scalable mobile applications. Experienced in exploring Flutter for cross-platform development and possessing foundational knowledge of web-based Python frameworks."
+        "Specializing in Kotlin, Android development, Kotlin Multiplatform, and Compose Multiplatform — cross-platform applications, native integrations, and backend services."
       }
     </p>
   </div>
 
-  <div
-    class="grid grid-cols-2 lg:grid-cols-8 md:grid-cols-4 gap-3 text-lime-950 mt-10"
-  >
-    <SkillBlock
-      name="Kotlin"
-      imageSrc="https://skillicons.dev/icons?i=kotlin"
-    />
-    <SkillBlock name="Dart" imageSrc="https://skillicons.dev/icons?i=dart" />
-    <SkillBlock
-      name="Python"
-      imageSrc="https://skillicons.dev/icons?i=python"
-    />
-    <SkillBlock
-      name="Javascript"
-      imageSrc="https://skillicons.dev/icons?i=javascript"
-    />
-    <SkillBlock
-      name="Android Studio"
-      imageSrc="https://skillicons.dev/icons?i=androidstudio"
-    />
-
-    <SkillBlock
-      name="Arduino"
-      imageSrc="https://skillicons.dev/icons?i=arduino"
-    />
-    <SkillBlock name="Asrto" imageSrc="https://skillicons.dev/icons?i=astro" />
-
-    <SkillBlock
-      name="Django"
-      imageSrc="https://skillicons.dev/icons?i=django"
-    />
-    <SkillBlock
-      name="Firebase"
-      imageSrc="https://skillicons.dev/icons?i=firebase"
-    />
-    <SkillBlock
-      name="Flutter"
-      imageSrc="https://skillicons.dev/icons?i=flutter"
-    />
-    <SkillBlock name="Git" imageSrc="https://skillicons.dev/icons?i=git" />
-    <SkillBlock
-      name="GitHub"
-      imageSrc="https://skillicons.dev/icons?i=github"
-    />
-
-    <SkillBlock
-      name="Graphql"
-      imageSrc="https://skillicons.dev/icons?i=graphql"
-    />
-    <SkillBlock name="Ktor" imageSrc="https://skillicons.dev/icons?i=ktor" />
-    <SkillBlock name="Mysql" imageSrc="https://skillicons.dev/icons?i=mysql" />
-    <SkillBlock
-      name="Sqlite"
-      imageSrc="https://skillicons.dev/icons?i=sqlite"
-    />
+  <div class="mt-10 grid gap-px border-2 border-ink bg-ink">
+    {
+      skillGroups.map((group) => (
+        <div class="grid gap-px bg-ink md:grid-cols-[240px_1fr]">
+          <header class="flex items-center bg-ink p-4 md:p-5">
+            <p class="type-micro font-bold text-paper">{group.label}</p>
+          </header>
+          <ul class="flex flex-wrap content-center gap-2 bg-paper p-4 md:p-5">
+            {group.skills.map((skill, i) => (
+              <li
+                class={`type-micro border border-ink px-2 py-1 font-bold text-ink transition-colors hover:bg-ink hover:text-paper ${chipPalette[i % chipPalette.length]}`}
+              >
+                {skill}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
   </div>
-  <p class="py-4 text-lime-950 font-medium text-center text-md font-poppins">
+  <p class="type-micro py-4 text-center">
     {
       " * Currently focusing on mobile development,thus mobile technologies are more brushed"
     }
   </p>
-</div>
+</section>
